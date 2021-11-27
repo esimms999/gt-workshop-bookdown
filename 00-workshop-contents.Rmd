@@ -1,7 +1,4 @@
----
-title: "Workshop Contents"
-output: html_document
----
+# Workshop Contents
 
 This **gt** workshop will teach you *a lot* about what **gt** can do, and, it'll give you an opportunity to experiment with the package. 
 
@@ -29,7 +26,7 @@ Each module of the workshop focuses on a different family of functions, with rel
 
 You can navigate to any of these and modify the code within the self-contained **R Markdown** code chunks. Entire **R Markdown** files can be knit to HTML, where a separate window will show the rendered document.
 
-### The **gt** Installation
+**The `gt` Installation**
 
 Normally you would install **gt** on your system by using `install.packages()`:
 

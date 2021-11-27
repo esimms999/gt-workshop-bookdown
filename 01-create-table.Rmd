@@ -1,7 +1,4 @@
----
-title: "Creating a Table, Exporting"
-output: html_document
----
+# Create Table
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -9,7 +6,7 @@ library(gt)
 library(tidyverse)
 ```
 
-## Intro
+**Intro**
 
 All **gt** tables begin with a call to `gt()`, where we would supply the input data table (data frame or tibble) and some basic options for creating a stub (`rowname_col`) and row groups (`groupname_col`). We can also introduce a grouped tibble (via **dplyr**’s `group_by()`) for more precise divisions of rows into row groups. 
 
@@ -19,7 +16,7 @@ Finally, sometimes we want to export the table to some format. It could be HTML,
 
 ------
 
-### Functions in this module
+**Functions in this module**
 
 - `gt()`
 - `gt_preview()`
@@ -28,7 +25,7 @@ Finally, sometimes we want to export the table to some format. It could be HTML,
 ------
 
 
-### `gt()`: Create a **gt** table object
+## `gt()`: Create a **gt** table object
 
 ``` r
 gt(
@@ -45,7 +42,7 @@ gt(
 
 The `gt()` function creates a **gt** table object when provided with table data. Using this function is the first step in a typical **gt** workflow. Once we have the **gt** table object, we can perform styling transformations before rendering to a display table of various formats.
 
-##### EXAMPLES
+**EXAMPLES**
 
 The **gt** package contains a few datasets:
 
@@ -120,7 +117,7 @@ pizzaplace %>%
 
 ------
 
-### `gt_preview()`: Preview a **gt** table object
+## `gt_preview()`: Preview a **gt** table object
 
 ``` r
 gt_preview(
@@ -133,7 +130,7 @@ gt_preview(
 
 Sometimes you may want to see just a small portion of your input data. We can use `gt_preview()` in place of `gt()` to get the first x rows of data and the last y rows of data (which can be set by the `top_n` and `bottom_n` arguments).
 
-##### EXAMPLES
+**EXAMPLES**
 
 Use `gtcars` to create a **gt** table preview (with only a few of its columns). You'll see the first five rows and the last row.
 
@@ -156,7 +153,7 @@ sp500 %>%
 
 ------
 
-### `gtsave()`: Save a **gt** table as a file
+## `gtsave()`: Save a **gt** table as a file
 
 ``` r
 gtsave(
@@ -169,7 +166,7 @@ gtsave(
 
 The `gtsave()` function makes it easy to save a **gt** table to a file. The function assumes the output file type by the extension provided in the output filename. This will produce either an HTML, PDF, PNG, LaTeX, or RTF file.
 
-##### EXAMPLES
+**EXAMPLES**
 
 Use `exibble` to create a **gt** table.
 
@@ -220,7 +217,7 @@ If you know about LaTeX, you'll know that you generally need LaTeX packages and 
 
 ------
 
-### SUMMARY
+## Summary
 
 1. Want to make a **gt** table? Get your input table in the right form and use `gt()`.
 2. The `gt()` function has a few options for adding group rows and a *stub*.
