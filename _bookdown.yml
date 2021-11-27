@@ -1,1 +1,1 @@
-rmd_files: ["00-workshop-contents.Rmd", "01-create-table.Rmd"]
+rmd_files: ["00-workshop-contents.Rmd", "01-create-table.Rmd", "02-create-modify-parts.Rmd"]
